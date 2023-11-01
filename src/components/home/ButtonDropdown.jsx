@@ -29,7 +29,7 @@ const ButtonDropdown = ({ data , imageButtons }) => {
                 </span>
             </div>
 
-            <ul className={`options options__mood absolute w-56 overflow-y-auto 
+            <ul className={`options options__mood absolute w-56 overflow-y-auto z-10
             max-h-72 px-4 mt-2 rounded-lg bg-[#454A61] animate-fadeInDown ${isActive ? 'block' : 'hidden'}`}>
                 {data.map((mood, index) => (
                     <li

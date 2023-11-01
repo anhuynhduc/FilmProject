@@ -25,7 +25,7 @@ function ButtonNotification() {
                     alt="notification" />
             </button>
 
-            <div className={`absolute w-40 overflow-y-auto max-h-72 p-2 rounded-lg
+            <div className={`absolute w-40 overflow-y-auto max-h-72 p-2 rounded-lg z-10 
              bg-gray-800 shadow-md transition-opacity duration-350 
              ${isListVisible ? "opacity-100" : "opacity-0 hidden"} left-[-130px] top-10`}>
                 {notifications.map((notification, index) => (

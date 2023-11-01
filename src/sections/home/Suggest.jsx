@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ButtonDropdown from "../../components/home/ButtonDropdown.jsx";
 import iconThinking from '../../assets/images/icons/iconThinking.svg'
 import iconDown from '../../assets/images/icons/iconDown.svg'
@@ -6,6 +6,7 @@ import iconFriend from '../../assets/images/icons/iconFriends.svg'
 import {Suggest1, Suggest2, Suggest3, Suggest4} from "../../assets/images/suggests/index.js";
 
 const moodLists = [
+    'Mood',
     'Happy',
     'Proud',
     'Worried',
@@ -16,6 +17,7 @@ const moodLists = [
 ];
 
 const somebodyLists = [
+    'With somebody',
     'Friend',
     'Love',
     'Family',
@@ -31,6 +33,21 @@ const imageButtonSomebody = {
     default: 'With somebody'
 }
 const Suggest = () => {
+
+    const [isMoodDropdownActive, setIsMoodDropdownActive] = useState(false);
+    const [isSomebodyDropdownActive, setIsSomebodyDropdownActive] = useState(false);
+
+    const toggleMoodDropdown = () => {
+        setIsMoodDropdownActive(!isMoodDropdownActive);
+        setIsSomebodyDropdownActive(false); // Ẩn dropdown khác
+    }
+
+    const toggleSomebodyDropdown = () => {
+        setIsSomebodyDropdownActive(!isSomebodyDropdownActive);
+        setIsMoodDropdownActive(false); // Ẩn dropdown khác
+    }
+
+
     const backgroundStyles1 = {
         backgroundImage: `url(${Suggest1})`,
         backgroundPositionY: '-25px',
@@ -60,8 +77,18 @@ const Suggest = () => {
                    <h1 className="text-4xl text-main-white my-6">Suggest what to </h1>
                    <h1 className="text-4xl text-main-white">see in the evening</h1>
                <div className=" flex justify-start items-center gap-4 mt-[180px]">
-                    <ButtonDropdown data={moodLists} imageButtons={imageButtonMoods}/>
-                    <ButtonDropdown data={somebodyLists} imageButtons={imageButtonSomebody}/>
+                   <ButtonDropdown
+                       data={moodLists}
+                       imageButtons={imageButtonMoods}
+                       isActive={isMoodDropdownActive}
+                       toggleDropdown={toggleMoodDropdown}
+                   />
+                   <ButtonDropdown
+                       data={somebodyLists}
+                       imageButtons={imageButtonSomebody}
+                       isActive={isSomebodyDropdownActive}
+                       toggleDropdown={toggleSomebodyDropdown}
+                   />
                </div>
            </div>
             <div className="w-[40%] flex gap-4 ml-2">

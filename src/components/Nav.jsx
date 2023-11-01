@@ -1,11 +1,7 @@
 import React, {useState} from 'react';
 import headerLogo from '../assets/images/icons/iconLogo.svg'
-import iconLanguage from '../assets/images/icons/iconLanguage.svg'
-import iconDown from '../assets/images/icons/iconDown-arrow.svg'
 import iconSearch from '../assets/images/icons/iconSearch.svg'
 import iconClosed from '../assets/images/icons/iconClose.svg'
-import iconNotify from '../assets/images/icons/iconNotification.svg'
-import iconProfile from '../assets/images/icons/iconUser-profile.svg'
 import {navLinks} from "../constants/index.js";
 import SearchCategory from "./home/SearchCategory.jsx";
 import ButtonLanguage from "./home/ButtonLanguage.jsx";

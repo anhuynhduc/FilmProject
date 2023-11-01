@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
-import iconThinking from '../../assets/images/icons/iconThinking.svg'
-import iconDown from '../../assets/images/icons/iconDown.svg'
 
-const ButtonDropdown = ({ data , imageButtons }) => {
-    const [isActive, setIsActive] = useState(false);
+
+const ButtonDropdown = ({ data, imageButtons, isActive, toggleDropdown }) => {
     const [selectedMood, setSelectedMood] = useState(imageButtons.default);
     const toggleMenu = () => {
-        setIsActive(!isActive);
+        toggleDropdown();
     };
 
     const selectMenu= (mood) => {
         setSelectedMood(mood);
-        setIsActive(false);
     };
 
     return (

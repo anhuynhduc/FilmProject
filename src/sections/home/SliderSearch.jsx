@@ -9,6 +9,7 @@ import './sliderSearch.css'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 import {sliderBanner1, sliderBanner2, sliderBanner3, sliderBanner4, sliderBanner5} from "../../assets/images/slider-banners/index.js";
+import {listSliderSearch} from "../../constants/index.js";
 
 function SliderSearch() {
     return (
@@ -34,51 +35,12 @@ function SliderSearch() {
                 modules={[EffectCoverflow, Pagination, Navigation]}
                 className="swiper_container"
             >
-                <SwiperSlide>
-                    <img src={sliderBanner1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner2} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner3} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner4} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner5} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner2} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner3} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner4} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner5} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner2} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner3} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner4} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sliderBanner5} alt="slide_image" />
-                </SwiperSlide>
+                {listSliderSearch.map((list) => (
+                    <SwiperSlide key={list.id}>
+                        <img src={list.imgURL} alt="slide_image" />
+                    </SwiperSlide>
+                ))}
+
 
                 <div className="slider-controler">
                     <div className="swiper-button-prev slider-arrow">

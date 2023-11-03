@@ -305,74 +305,95 @@ export const responsive = {
     },
 };
 
+export const responsiveVideo = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 1024 },
+        items: 3,
+        slidesToSlide: 2,
+    },
+    desktop: {
+        breakpoint: { max: 1024, min: 800 },
+        items: 4,
+    },
+    tablet: {
+        breakpoint: { max: 800, min: 464 },
+        items: 2,
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 5,
+    },
+};
+
 export const movieData = [
     {
         id: 1,
         imageUrl: Movie1,
-        name: "Colorful sneakers",
+        name: "ME BEFORE YOU",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 2,
         imageUrl: Movie2,
-        name: "Colorful sneakers",
+        name: "FANTASTIC BEASTS",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 3,
         imageUrl: Movie3,
-        name: "Colorful sneakers",
+        name: "THOR LOVE AND THUNDER",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 4,
         imageUrl: Movie4,
-        name: "Colorful sneakers",
+        name: "VABAMEES",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 5,
         imageUrl: Movie5,
-        name: "Colorful sneakers",
+        name: "AVATAR",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 6,
         imageUrl: Movie6,
-        name: "Colorful sneakers",
+        name: "ROBIN HOOD",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 7,
         imageUrl: Movie1,
-        name: "Colorful sneakers",
+        name: "ME BEFORE YOU",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 8,
         imageUrl: Movie2,
-        name: "Colorful sneakers",
+        name: "FANTASTIC BEASTS",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 9,
         imageUrl: Movie3,
-        name: "Colorful sneakers",
+        name: "THOR LOVE AND THUNDER",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 10,
         imageUrl: Movie4,
-        name: "Colorful sneakers",
+        name: "VABAMEES",
         price: "$19.99",
         description: "Some text about the product..",
     }
@@ -382,70 +403,70 @@ export const seriesData = [
     {
         id: 1,
         imageUrl: series1,
-        name: "Colorful sneakers",
+        name: "GINNY & GEORGIA",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 2,
         imageUrl: series2,
-        name: "Colorful sneakers",
+        name: "YOU",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 3,
         imageUrl: series3,
-        name: "Colorful sneakers",
+        name: "WEDNESDAY",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 4,
         imageUrl: series4,
-        name: "Colorful sneakers",
+        name: "STRANGER THINGS",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 5,
         imageUrl: series5,
-        name: "Colorful sneakers",
+        name: "BATCHED",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 6,
         imageUrl: series6,
-        name: "Colorful sneakers",
+        name: "DAWN OF THE SEVEN",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 7,
         imageUrl: series1,
-        name: "Colorful sneakers",
+        name: "GINNY & GEORGIA",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 8,
         imageUrl: series2,
-        name: "Colorful sneakers",
+        name: "YOU",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 9,
         imageUrl: series3,
-        name: "Colorful sneakers",
+        name: "WEDNESDAY",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 10,
         imageUrl: series4,
-        name: "Colorful sneakers",
+        name: "STRANGER THINGS",
         price: "$19.99",
         description: "Some text about the product..",
     }
@@ -455,70 +476,70 @@ export const cartoonData = [
     {
         id: 1,
         imageUrl: Cartoon1,
-        name: "Colorful sneakers",
+        name: "HOME",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 2,
         imageUrl: Cartoon2,
-        name: "Colorful sneakers",
+        name: "ZOOTOPIE",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 3,
         imageUrl: Cartoon3,
-        name: "Colorful sneakers",
+        name: "TANGLED",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 4,
         imageUrl: Cartoon4,
-        name: "Colorful sneakers",
+        name: "BRAVE",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 5,
         imageUrl: Cartoon5,
-        name: "Colorful sneakers",
+        name: "SING2",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 6,
         imageUrl: Cartoon6,
-        name: "Colorful sneakers",
+        name: "LUCA",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 7,
         imageUrl: Cartoon1,
-        name: "Colorful sneakers",
+        name: "HOME",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 8,
         imageUrl: Cartoon2,
-        name: "Colorful sneakers",
+        name: "ZOOTOPIE",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 9,
         imageUrl: Cartoon3,
-        name: "Colorful sneakers",
+        name: "TANGLED",
         price: "$19.99",
         description: "Some text about the product..",
     },
     {
         id: 10,
         imageUrl: Cartoon4,
-        name: "Colorful sneakers",
+        name: "BRAVE",
         price: "$19.99",
         description: "Some text about the product..",
     }
@@ -528,7 +549,7 @@ export const outstandingData = [
     {
         id: 1,
         imageUrl: Weekly1,
-        name: "Colorful sneakers",
+        name: "THE LITTLE MERMAID",
         price: "$19.99",
         description: "Some text about the product..",
         order: 1
@@ -536,7 +557,7 @@ export const outstandingData = [
     {
         id: 2,
         imageUrl: Weekly2,
-        name: "Colorful sneakers",
+        name: "THOR LOVE AND THUNDER",
         price: "$19.99",
         description: "Some text about the product..",
         order: 2
@@ -544,7 +565,7 @@ export const outstandingData = [
     {
         id: 3,
         imageUrl: Weekly3,
-        name: "Colorful sneakers",
+        name: "AVATAR",
         price: "$19.99",
         description: "Some text about the product..",
         order: 3
@@ -552,7 +573,7 @@ export const outstandingData = [
     {
         id: 4,
         imageUrl: Weekly4,
-        name: "Colorful sneakers",
+        name: "FINNICK",
         price: "$19.99",
         description: "Some text about the product..",
         order: 4
@@ -560,7 +581,7 @@ export const outstandingData = [
     {
         id: 5,
         imageUrl: Weekly5,
-        name: "Colorful sneakers",
+        name: "YOU",
         price: "$19.99",
         description: "Some text about the product..",
         order: 5
@@ -568,7 +589,7 @@ export const outstandingData = [
     {
         id: 6,
         imageUrl: Weekly1,
-        name: "Colorful sneakers",
+        name: "THE LITTLE MERMAID",
         price: "$19.99",
         description: "Some text about the product..",
         order: 6
@@ -576,7 +597,7 @@ export const outstandingData = [
     {
         id: 7,
         imageUrl: Weekly2,
-        name: "Colorful sneakers",
+        name: "THOR LOVE AND THUNDER",
         price: "$19.99",
         description: "Some text about the product..",
         order: 7
@@ -584,7 +605,7 @@ export const outstandingData = [
     {
         id: 8,
         imageUrl: Weekly3,
-        name: "Colorful sneakers",
+        name: "AVATAR",
         price: "$19.99",
         description: "Some text about the product..",
         order: 8
@@ -592,7 +613,7 @@ export const outstandingData = [
     {
         id: 9,
         imageUrl: Weekly4,
-        name: "Colorful sneakers",
+        name: "FINNICK",
         price: "$19.99",
         description: "Some text about the product..",
         order: 9
@@ -600,9 +621,68 @@ export const outstandingData = [
     {
         id: 10,
         imageUrl: Weekly5,
-        name: "Colorful sneakers",
+        name: "YOU",
         price: "$19.99",
         description: "Some text about the product..",
         order: 10
+    }
+];
+
+export const ContinueWatchingData = [
+    {
+        id: 1,
+        imageUrl: "https://www.youtube.com/watch?v=xOsLIiBStEs&t=4s",
+        name: "Soul 2020",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 2,
+        imageUrl: "https://www.youtube.com/watch?v=iszwuX1AK6A&t=10s",
+        name: "The Wolf of wall street 2013",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 3,
+        imageUrl: "https://www.youtube.com/watch?v=76AuB3eZxS4" ,
+        name: "Elite 2018, season2",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 4,
+        imageUrl: "https://www.youtube.com/watch?v=cajLoaFl2Zo&t=42s",
+        name: "Euphoria 2019",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 5,
+        imageUrl: "https://www.youtube.com/watch?v=2EnP2tVC00Q",
+        name: "Lật mặt 6",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 6,
+        imageUrl: "https://www.youtube.com/watch?v=H8vDoSghadk",
+        name: "Blue beetle",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 7,
+        imageUrl: "https://www.youtube.com/watch?v=SS4xaLNVqfc",
+        name: "Hidden Strike",
+        price: "$19.99",
+        description: "Some text about the product..",
+    },
+    {
+        id: 8,
+        imageUrl: "https://www.youtube.com/watch?v=lAoBjciGva4",
+        name: "The little mermaid",
+        price: "$19.99",
+        description: "Some text about the product..",
     }
 ];

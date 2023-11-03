@@ -82,3 +82,6 @@
 .swiper-button-next{
     margin-left: 50%;
 }
+.swiper-slide.swiper-slide-visible.swiper-slide-active img {
+    height: 480px;
+}

@@ -13,9 +13,12 @@
     cursor: pointer;
 }
 
-.order{
-    top: 110px;
-    position: absolute;
-    left: 130px;
-    opacity: 0.8;
+.group .popup{
+    transition:opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform-origin: center center;
+}
+.popup-button button:hover{
+    opacity: 0.9;
+    background: #CC9933;
+    border: none;
 }

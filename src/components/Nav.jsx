@@ -55,7 +55,7 @@ const Nav = () => {
 
                 {/*header action*/}
                 <div className={`${showNavLink ? "ml-[450px]" : "ml-[40px]"}`}>
-                    <ButtonLanguage type={'below'}/>
+                    <ButtonLanguage type={'below'} location={openSearch}/>
                 </div>
 
                 {/*action search*/}

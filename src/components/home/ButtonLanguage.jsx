@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import iconLanguage from '../../assets/images/icons/iconLanguage.svg'
 import iconDownRow from '../../assets/images/icons/iconDown-arrow.svg'
 function ButtonLanguage({ type, location }) {
     const [isOptionsVisible, setOptionsVisible] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState("");
 
+    let menuRef = useRef()
+
     const languages = ["English", "French", "Chinese", "Vietnamese"];
+
 
     const toggleOptions = () => {
         setOptionsVisible(!isOptionsVisible);
@@ -16,8 +19,17 @@ function ButtonLanguage({ type, location }) {
         setOptionsVisible(false);
     };
 
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef.current.contains(e.target)){
+                setOptionsVisible(false)
+            }
+        }
+        document.addEventListener("mousedown", handler);
+    })
+
     return (
-        <div className={`w-[167px] h-[45px] flex ${ location ? "justify-start" : "justify-end"}`}>
+        <div ref={menuRef} className={`w-[167px] h-[45px] flex ${ location ? "justify-start" : "justify-end"}`}>
             <div className="relative inline-block">
                 <div className="border-2 border-gray-800 rounded-[10px]
             h-[45px] bg-gray-900 text-main-white flex justify-center items-center gap-2
@@ -29,7 +41,7 @@ function ButtonLanguage({ type, location }) {
 
                 <ul className={`absolute w-[190px] overflow-y-auto max-h-72  z-10
              px-4 mt-2 rounded-lg bg-gray-800 shadow-md 
-             transition-opacity duration-350 
+             transition-opacity duration-350 left-[-100px]
              ${ type === "above" ? "top-[-240px]": ""}
               ${isOptionsVisible ? "opacity-100" : "opacity-0 hidden"}`}>
                     {languages.map((language, index) => (

@@ -11,6 +11,13 @@ import iconTwitter from './iconTwitter.svg'
 import iconFacebook from './iconFacebook.svg'
 import iconSend from './iconSend.svg'
 
+import iconUserProfile from './iconUserProfile.jpeg'
+import iconSetting from './iconSetting.svg'
+import iconMoon from './iconMoon.png'
+import iconLogout from './iconLogout.png'
+import iconHelp from './iconHelp.png'
+import iconComment from './iconComment.png'
+
 
 
 export {
@@ -25,5 +32,11 @@ export {
     iconSend,
     iconFacebook,
     iconInstagram,
-    iconTwitter
+    iconTwitter,
+    iconHelp,
+    iconMoon,
+    iconComment,
+    iconLogout,
+    iconSetting,
+    iconUserProfile
 }

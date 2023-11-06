@@ -7,6 +7,8 @@ import SearchCategory from "./home/SearchCategory.jsx";
 import ButtonLanguage from "./home/ButtonLanguage.jsx";
 import ButtonNotification from "./home/ButtonNotification.jsx";
 import ButtonProfile from "./home/ButtonProfile.jsx";
+import Reveal from "./home/Reveal.jsx";
+import SliderSearch from "../sections/home/SliderSearch.jsx";
 const Nav = () => {
     const [openSearch, setOpenSearch] = useState(false)
     const [showNavLink, setShowNavLink] = useState(true)
@@ -94,7 +96,8 @@ const Nav = () => {
                     <ButtonProfile/>
                 </div>
             </header>
-            {openSearch && <SearchCategory/>}
+            { openSearch && <SearchCategory/> }
+            { showNavLink && <SliderSearch/> }
         </nav>
     );
 };

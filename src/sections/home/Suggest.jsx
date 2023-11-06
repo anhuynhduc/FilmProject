@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import ButtonDropdown from "../../components/home/ButtonDropdown.jsx";
 import iconThinking from '../../assets/images/icons/iconThinking.svg'
 import iconDown from '../../assets/images/icons/iconDown.svg'
@@ -34,20 +34,6 @@ const imageButtonSomebody = {
 }
 const Suggest = () => {
 
-    const [isMoodDropdownActive, setIsMoodDropdownActive] = useState(false);
-    const [isSomebodyDropdownActive, setIsSomebodyDropdownActive] = useState(false);
-
-    const toggleMoodDropdown = () => {
-        setIsMoodDropdownActive(!isMoodDropdownActive);
-        setIsSomebodyDropdownActive(false); // Ẩn dropdown khác
-    }
-
-    const toggleSomebodyDropdown = () => {
-        setIsSomebodyDropdownActive(!isSomebodyDropdownActive);
-        setIsMoodDropdownActive(false); // Ẩn dropdown khác
-    }
-
-
     const backgroundStyles1 = {
         backgroundImage: `url(${Suggest1})`,
         backgroundPositionY: '-25px',
@@ -80,14 +66,10 @@ const Suggest = () => {
                    <ButtonDropdown
                        data={moodLists}
                        imageButtons={imageButtonMoods}
-                       isActive={isMoodDropdownActive}
-                       toggleDropdown={toggleMoodDropdown}
                    />
                    <ButtonDropdown
                        data={somebodyLists}
                        imageButtons={imageButtonSomebody}
-                       isActive={isSomebodyDropdownActive}
-                       toggleDropdown={toggleSomebodyDropdown}
                    />
                </div>
            </div>

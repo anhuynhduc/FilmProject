@@ -7,6 +7,7 @@ import Login from "./pages/Login.jsx";
 import PaymentForm from "./pages/PaymentForm.jsx";
 import PaymentCode from "./pages/PaymentCode.jsx";
 import PaymentSuccess from "./pages/PaymentSuccess.jsx";
+import Preview from "./pages/Preview.jsx";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ function App() {
           {/*<PaymentForm/>*/}
           {/*<PaymentCode/>*/}
           {/*<PaymentSuccess/>*/}
+          {/*<Preview/>*/}
       </div>
   )
 }

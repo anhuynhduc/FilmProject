@@ -41,8 +41,8 @@ const Nav = () => {
                     </a>
                 </div>
                 {/*navlinks*/}
-                {showNavLink && <ul className="flex justify-between items-center gap-[40px] ml-[40px]
-                ">
+                {showNavLink && <ul className="flex justify-between items-center gap-[40px] ml-[40px] md:gap-[20px]
+                md:ml-[20px]">
                     {navLinks.map((nav, index) => (
                         <li key={index}>
                             <a
@@ -56,7 +56,7 @@ const Nav = () => {
                 </ul>}
 
                 {/*header action*/}
-                <div className={`${showNavLink ? "ml-[450px]" : "ml-[40px]"}`}>
+                <div className={`${showNavLink ? "2xl:ml-[650px] xl:ml-[300px]" : "lg:ml-[40px]"}`}>
                     <ButtonLanguage type={'below'} location={openSearch}/>
                 </div>
 
@@ -86,7 +86,7 @@ const Nav = () => {
 
                 {/*action profile*/}
                 <div className="flex justify-center items-center gap-[15px] pl-[20px]">
-                    <button className="h-auto w-auto bg-vibrant-pink
+                    <button className="h-auto w-auto bg-vibrant-pink md:text-[10px]
                         py-[5px] px-[10px] text-main-white rounded-[5px]
                         hover:bg-pink-600
                     ">

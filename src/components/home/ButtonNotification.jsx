@@ -27,14 +27,14 @@ function ButtonNotification() {
         <div ref={menuRef} className="relative">
             <button className="bg-transparent border-0 btn_icon btn-notification" onClick={() => setListVisible(!isListVisible)}>
                 <img
-                    className="w-[25px]"
+                    className="xl:w-[25px] md:w-[20px] md:mt-[4px] sm:hidden xl:block md:block"
                     src={iconNotification}
                     alt="notification" />
             </button>
 
-            { isListVisible && <div className={`absolute w-auto overflow-y-auto max-h-72 p-4 rounded-lg z-10 
+            { isListVisible && <div className={`absolute w-auto overflow-y-auto max-h-72 p-4 rounded-lg z-10
              bg-gray-800 shadow-md transition-opacity duration-350 
-             left-[-210px] top-12`}>
+             left-[-220px] top-12`}>
                 <div className="">
                     <h1 className="text-main-white">Notification</h1>
                 </div>

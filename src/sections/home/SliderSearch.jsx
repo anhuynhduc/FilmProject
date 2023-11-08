@@ -36,8 +36,8 @@ function SliderSearch() {
                 className="swiper_container"
             >
                 {listSliderSearch.map((list) => (
-                    <SwiperSlide key={list.id}>
-                        <img src={list.imgURL} alt="slide_image" />
+                    <SwiperSlide key={list.id} >
+                        <img src={list.imgURL} alt="slide_image"/>
                     </SwiperSlide>
                 ))}
 

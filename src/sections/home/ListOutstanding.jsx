@@ -20,8 +20,11 @@ const ListOutstanding = () => {
         />
     ));
     return (
-        <div className="ListMovies mt-[80px] w-[90%] ml-[5%]">
-            <h1 className="text-main-white text-[45px] my-10 mx-8">Weekly Top</h1>
+        <div className="ListMovies xl:mt-[80px] md:mt-[50px] w-[90%] ml-[5%]">
+            <h1 className="text-main-white xl:text-[45px] md:text-[25px] xl:my-10 xl:mx-8
+            md:my-10 md:mx-8 sm:my-6 sm:mx-4">
+                Weekly Top
+            </h1>
             <Carousel responsive={responsive}>
                 {movie}
             </Carousel>

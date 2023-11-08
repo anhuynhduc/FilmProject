@@ -48,7 +48,8 @@ function UserProfile() {
     return (
         <div  ref={menuRef} className="relative">
             <button className="bg-transparent border-0 btn_icon btn-profile" onClick={() => setProfileVisible(!isProfileVisible)}>
-                <img src={UserIcon} alt="user-profile" className="h-7" />
+                <img src={UserIcon} alt="user-profile" className="xl:h-[25px] xl:w-[25px] md:w-[20px] md:mt-[4px] sm:w-[15px] sm:mt-[7px]
+                xl:ml-0 md:ml-0" />
             </button>
 
             {isProfileVisible && <ul className={`absolute w-auto px-4 py-2 bg-gray-800 rounded-lg shadow-md 

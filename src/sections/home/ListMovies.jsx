@@ -17,8 +17,9 @@ import Movie from "../../components/home/Movie.jsx";
     ));
 
     return (
-        <div className="ListMovies mt-[80px] w-[90%] ml-[5%]">
-            <h1 className="text-main-white text-[45px] my-10 mx-8">{typeMovies}</h1>
+        <div className="ListMovies xl:mt-[80px] md:mt-[50px] sm:mt-[30px] w-[90%] ml-[5%]">
+            <h1 className="text-main-white xl:text-[45px] md:text-[25px]
+            xl:my-10 xl:mx-8 md:my-10 md:mx-8 sm:mx-4 sm:my-4">{typeMovies}</h1>
             <Carousel responsive={responsive}>
                 {movie}
             </Carousel>

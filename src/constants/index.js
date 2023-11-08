@@ -293,15 +293,15 @@ export const responsive = {
     },
     desktop: {
         breakpoint: { max: 1024, min: 800 },
-        items: 4,
+        items: 5,
     },
     tablet: {
         breakpoint: { max: 800, min: 464 },
-        items: 2,
+        items: 5,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 5,
+        items: 4,
     },
 };
 
@@ -313,16 +313,16 @@ export const responsiveVideo = {
         slidesToSlide: 2,
     },
     desktop: {
-        breakpoint: { max: 1024, min: 800 },
+        breakpoint: { max: 1024, min: 860 },
         items: 4,
     },
     tablet: {
-        breakpoint: { max: 800, min: 464 },
+        breakpoint: { max: 860, min: 464 },
         items: 2,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 5,
+        items: 1,
     },
 };
 

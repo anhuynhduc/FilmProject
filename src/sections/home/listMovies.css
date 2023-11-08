@@ -22,3 +22,19 @@
     background: #CC9933;
     border: none;
 }
+
+@media  (max-width: 768px ) and (min-width: 330px) {
+    .react-multiple-carousel__arrow {
+        position: absolute;
+        outline: 0;
+        transition: all .5s;
+        border-radius: 5px !important;
+        z-index: 1000;
+        border: 0;
+        background: rgba(163, 175, 180, 1) !important;
+        min-width: 25px !important;
+        min-height: 35px !important;
+        opacity: 0.9 !important;
+        cursor: pointer;
+    }
+}

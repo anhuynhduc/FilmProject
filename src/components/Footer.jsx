@@ -15,47 +15,48 @@ const Footer = () => {
                 {listSocials.map((social) => (
                         <a key={social.id} href={social.link}>
                             <img
-                                className="w-8"
+                                className="xl:w-8 md:w-6 sm:w-5"
                                 src={social.imgURL}
                                 alt={social.link}
                             />
                         </a>
                 ))}
             </div>
-            <div className="flex justify-center items-center gap-10 mt-14">
+            <div className="flex justify-center items-center xl:gap-10 md:gap-6 xl:mt-14 md:mt-14 sm:mt-8
+            flex-wrap sm:gap-4 ">
                 {listLinkFooters.map((list) => (
                         <a key={list.id} href={list.link}>
-                        <span className="text-dark-gray text-xl">
+                        <span className="text-dark-gray xl:text-xl md:text-[14px] sm:text-[12px]">
                             {list.title}
                         </span>
                         </a>
                 ))}
             </div>
-            <div className="flex justify-center items-center gap-4 mt-14">
-                    <a className="flex justify-center items-center bg-[#1C1F29] pl-1 pr-4 rounded-[10px]"
-                       href="/appStore"
-                    >
-                        <img className="w-16" src={appStore} alt="appstore"/>
-                        <div className=" text-left">
-                            <p className="text-main-white text-[14px]">Upload to</p>
-                            <p className="text-main-white text-lg">App Store</p>
-                        </div>
-                    </a>
+            <div className="flex justify-center items-center gap-4 xl:mt-14 md:mt-14 sm:mt-8">
                     <a className="flex justify-center items-center bg-[#1C1F29] px-4 py-[11px] rounded-[10px] gap-1"
                        href="/appStore"
                     >
-                        <img className="w-10" src={googlePlay} alt="appstore"/>
+                        <img className="xl:w-10 md:w-8" src={appStore} alt="appstore"/>
                         <div className=" text-left">
-                            <p className="text-main-white text-[14px]">Upload to</p>
-                            <p className="text-main-white text-lg">Google Play</p>
+                            <p className="text-main-white xl:text-[14px] md:text-[12px] sm:text-[9px]">Upload to</p>
+                            <p className="text-main-white xl:text-lg md:text-base sm:text-[13px]">App Store</p>
+                        </div>
+                    </a>
+                    <a className="flex justify-center items-center bg-[#1C1F29] px-4 py-[11px] rounded-[10px] gap-1"
+                       href="/GooglePlay"
+                    >
+                        <img className="xl:w-10 md:w-8" src={googlePlay} alt="appstore"/>
+                        <div className=" text-left">
+                            <p className="text-main-white xl:text-[14px] md:text-[12px] sm:text-[9px]">Upload to</p>
+                            <p className="text-main-white xl:text-lg md:text-base sm:text-[13px]">Google Play</p>
                         </div>
                     </a>
             </div>
-            <div className="flex justify-between items-center mt-10">
+            <div className="flex justify-between items-center xl:mt-10 md:mt-14 sm:mt-10">
                     <ButtonLanguage type={'above'}/>
                     <div className="flex gap-3 justify-center">
-                        <img src={iconLogo} alt="playOn"/>
-                        <span className="text-main-white text-lg">Los-Angeles</span>
+                        <img src={iconLogo} alt="playOn" className="xl:w-[100px] md:w-[100px] sm:w-[50px]"/>
+                        <span className="text-main-white xl:text-lg md:text-lg sm:text-[12px]">Los-Angeles</span>
                     </div>
             </div>
         </div>

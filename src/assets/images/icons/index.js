@@ -17,6 +17,7 @@ import iconMoon from './iconMoon.png'
 import iconLogout from './iconLogout.png'
 import iconHelp from './iconHelp.png'
 import iconComment from './iconComment.png'
+import iconList from './iconList.png'
 
 
 
@@ -38,5 +39,6 @@ export {
     iconComment,
     iconLogout,
     iconSetting,
-    iconUserProfile
+    iconUserProfile,
+    iconList
 }

@@ -27,7 +27,7 @@ const Preview = () => {
                 <SuggestPreview/>
                 <div className="w-[97%] ml-[1.5%] bg-midnight-blue mt-8 rounded-[20px] py-[50px] overflow-hidden
                 xl:mt-0 md:mt-0 sm:mt-10">
-                    <div className="flex justify-center items-center relative xl:mt-0 md:mt-0 sm:mt-[50px]">
+                    <div className="flex justify-center items-center relative xl:mt-0 md:mt-[150px] sm:mt-[50px]">
                         <div className="relative flex xl:ml-[600px] md:ml-[400px]">
                             <div className="z-1 xl:w-[250px] xl:h-[390px] bg-[#4A2F4B] rounded-full blur-[90px]
                             xl:block md:block sm:hidden"></div>
@@ -39,13 +39,13 @@ const Preview = () => {
                             <p className="xl:text-2xl md:text-base sm:text-[10px] text-main-white mt-6">Play movies and series on all your</p>
                             <p className="xl:text-2xl md:text-base sm:text-[10px] text-main-white mt-4">devices: laptop, tablet, phone</p>
                         </div>
-                        <div className="flex absolute justify-center items-center xl:right-0 md:right-[-50px] sm:right-[-30px]">
-                            <img className="xl:w-[700px] md:x-[400px] sm:w-[220px]" src={Laptop} alt="pc"/>
-                            <img className="absolute xl:top-56 xl:left-[320px] md:top-[180px] md:left-[210px] sm:top-[100px]
+                        <div className="flex absolute justify-center items-center xl:right-0 md:right-[-30px] sm:right-[-30px]">
+                            <img className="xl:w-[700px] md:w-[400px] sm:w-[220px]" src={Laptop} alt="pc"/>
+                            <img className="absolute xl:top-56 xl:left-[320px] md:top-[140px] md:left-[150px] sm:top-[100px]
                             xl:w-[300px] md:w-[170px] sm:w-[70px] sm:left-[110px]" src={Ipad} alt="handle"/>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center gap-40 xl:my-20 md:mt-[-150px] sm:mt-[180px]">
+                    <div className="flex justify-center items-center gap-40 xl:my-20 md:mt-[40px] sm:mt-[180px]">
                         <div className="relative flex ml-[-650px]">
                             <div className=" mt-[-50px] z-1 w-[300px] h-[590px] bg-[#25344D] rounded-full blur-[50px]
                             xl:block md:block sm:hidden"></div>

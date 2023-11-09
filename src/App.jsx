@@ -19,14 +19,14 @@ function App() {
     }, []);
   return (
       <div className="relative">
-          {isLoading ? <LoadingPage /> : <Home/>}
+          {/*{isLoading ? <LoadingPage /> : <Home/>}*/}
           {/*<RegisterForm/>*/}
           {/*<RegisterCode/>*/}
           {/*<Login/>*/}
           {/*<PaymentForm/>*/}
           {/*<PaymentCode/>*/}
           {/*<PaymentSuccess/>*/}
-          {/*<Preview/>*/}
+          <Preview/>
       </div>
   )
 }

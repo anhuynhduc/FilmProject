@@ -20,33 +20,39 @@ function Login () {
                 </div>
                 <ButtonLanguage/>
             </header>
-            <div className="w-screen ml-0 h-[650px] relative ">
+            <div className="w-screen ml-0 xl:h-[650px] md:h-[1010px] sm:h-[580px] 2xl:h-[1250px] relative ">
                 <div className="w-screen h-[100%] bg-midnight-blue">
                     <div className="w-screen h-[100%] bg-[#020510] z-[3] absolute opacity-[45%]"></div>
-                    <div className="w-[100%] h-[100%] z-[2] flex justify-center items-center gap-5">
+                    <div className="w-[100%] h-[100%] z-[2] flex justify-center items-center xl:gap-5 md:gap-2 sm:gap-1">
                         <div className="w-[50%] h-[100%]">
-                            <img className="w-[100%] h-[250px] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm1} alt=""/>
-                            <img className="w-[100%] h-[380px] object-cover rounded-tl-[10px] rounded-tr-[10px] mt-5" src={bannerForm6} alt=""/>
+                            <img className="w-[100%] h-[38%] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm1} alt=""/>
+                            <img className="w-[100%] h-[59%] object-cover rounded-tl-[10px] rounded-tr-[10px]
+                            xl:mt-5 md:mt-2 sm:mt-1" src={bannerForm6} alt=""/>
                         </div>
                         <div className="w-[50%] h-[100%]">
                             <img className="w-[100%] h-[55%] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm2} alt=""/>
-                            <img className="w-[100%] h-[42%] object-cover rounded-tl-[10px] rounded-tr-[10px] mt-5" src={bannerForm7} alt=""/>
+                            <img className="w-[100%] h-[42%] object-cover rounded-tl-[10px] rounded-tr-[10px]
+                            xl:mt-5 md:mt-2 sm:mt-1" src={bannerForm7} alt=""/>
                         </div>
                         <div className="w-[50%] h-[100%]">
-                            <img className="w-[100%] h-[250px] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm3} alt=""/>
-                            <img className="w-[100%] h-[380px] object-cover rounded-tl-[10px] rounded-tr-[10px] mt-5" src={bannerForm8} alt=""/>
+                            <img className="w-[100%] h-[35%] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm3} alt=""/>
+                            <img className="w-[100%] h-[62%] object-cover rounded-tl-[10px] rounded-tr-[10px]
+                            xl:mt-5 md:mt-2 sm:mt-1" src={bannerForm8} alt=""/>
                         </div>
                         <div className="w-[50%] h-[100%]">
-                            <img className="w-[100%] h-[370px] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm4} alt=""/>
-                            <img className="w-[100%] h-[260px] object-cover rounded-tl-[10px] rounded-tr-[10px] mt-5" src={bannerForm9} alt=""/>
+                            <img className="w-[100%] h-[60%] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm4} alt=""/>
+                            <img className="w-[100%] h-[37%] object-cover rounded-tl-[10px] rounded-tr-[10px]
+                            xl:mt-5 md:mt-2 sm:mt-1" src={bannerForm9} alt=""/>
                         </div>
                         <div className="w-[50%] h-[100%]">
-                            <img className="w-[100%] h-[270px] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm5} alt=""/>
-                            <img className="w-[100%] h-[355px] object-cover rounded-tl-[10px] rounded-tr-[10px] mt-5" src={bannerForm10} alt=""/>
+                            <img className="w-[100%] h-[40%] object-cover rounded-bl-[10px] rounded-br-[10px]" src={bannerForm5} alt=""/>
+                            <img className="w-[100%] h-[57%] object-cover rounded-tl-[10px] rounded-tr-[10px]
+                            xl:mt-5 md:mt-2 sm:mt-1" src={bannerForm10} alt=""/>
                         </div>
                     </div>
                     <div className="w-[100%] h-[100%] absolute z-[4] flex justify-center items-center left-0 top-0">
-                        <div className="h-[480px] w-[450px] bg-main-white z-[4] absolute rounded-[10px] opacity-30">
+                        <div className="bg-main-white z-[4] absolute rounded-[10px] opacity-30
+                        xl:h-[480px] xl:w-[450px] md:h-[480px] md:w-[450px] sm:h-[370px] sm:w-[350px] ">
                         </div>
                     </div>
                     <div className="w-[100%] h-[100%] absolute z-[5] flex justify-center items-center left-0 top-0">

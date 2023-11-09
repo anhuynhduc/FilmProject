@@ -36,7 +36,7 @@ function ButtonLanguage({ type, location }) {
              md:h-[45px] xl:h-[45px] md:px-[6px] bg-gray-900 text-main-white flex justify-center items-center gap-2
              px-4 cursor-pointer" onClick={toggleOptions}>
                     <img src={iconLanguage} className="h-6 md:h-4 sm:h-[15px]" alt="Language" />
-                    <span className="md:text-[12px] xl:text-base " id="selectedLanguage">{selectedLanguage}</span>
+                    <span className="sm:text-[11px] md:text-[12px] xl:text-base " id="selectedLanguage">{selectedLanguage}</span>
                     <img src={iconDownRow} className="h-3" alt="Dropdown" />
                 </div>
 

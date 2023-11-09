@@ -53,8 +53,8 @@ function UserProfile() {
             </button>
 
             {isProfileVisible && <ul className={`absolute w-auto px-4 py-2 bg-gray-800 rounded-lg shadow-md 
-            left-[-220px] top-12 z-10 transition-opacity duration-350 flex flex-col justify-center items-start
-            `}>
+             top-12 z-10 transition-opacity duration-350 flex flex-col justify-center items-start
+            xl:left-[-220px] md:left-[-220px] sm:left-[-180px]`}>
                 <div className="flex justify-start items-center p-2 rounded-[10px] gap-2  w-[100%] ">
                     <img className="h-10 w-10 rounded-full object-cover" src={userProfileIcon} alt=""/>
                     <span className="text-main-white text-xl">Johny</span>
@@ -64,10 +64,11 @@ function UserProfile() {
                     rounded-[10px]
                     ">
                         <div className="flex justify-start items-center gap-2">
-                            <img className="h-5" src={option.icon} alt={option.action}/>
+                            <img className="xl:h-5 md:h-5 sm:h-3" src={option.icon} alt={option.action}/>
                             <a
                                 onClick={() => setProfileVisible(false)}
-                                className="block mt-2 text-gray-400 cursor-pointer"
+                                className="block xl:mt-2 md:mt-2 sm:mt-[2px] text-gray-400 cursor-pointer
+                                xl:text-base md:text-base sm:text-[11px]"
                             >
                                 <p>
                                      {option.action}

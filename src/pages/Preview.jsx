@@ -4,9 +4,10 @@ import ButtonLanguage from "../components/home/ButtonLanguage.jsx";
 import SuggestPreview from "../sections/preview/SuggestPreview.jsx";
 import {
     Avengers, Download, Dragon, Laptop, Phone, Prozen, Home, Handle,
-    Raya, Zootopie, iconPlay, iconLock, iconUser, iconNext, Encanto, Lion, Pc, Alien, Kid, Fox, Full_Phone, Ipad
+    Raya, Zootopie, iconPlay, iconLock, iconUser, Encanto, Lion, Pc, Alien, Kid, Fox, Full_Phone, Ipad
 } from "../assets/images/previews/index.js";
 import Footer from "../components/Footer.jsx";
+import {Link} from "react-router-dom";
 const Preview = () => {
     return (
         <div className="preview">
@@ -19,7 +20,7 @@ const Preview = () => {
                     <button className="xl:w-[100px] xl:h-[45px] bg-vibrant-pink text-main-white hover:bg-[#E22267]
                     xl:text-[16px] border-none xl:rounded-[10px] md:w-[100px] sm:w-[70px] md:h-[45px] sm:h-[30px]
                     md:rounded-[10px] sm:rounded-[5px] md:text-[16px] sm:text-[13px]">
-                        Sign in
+                        <Link to="/home">Sign in</Link>
                     </button>
                 </div>
             </header>

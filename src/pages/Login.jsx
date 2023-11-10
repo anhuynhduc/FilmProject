@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from "../assets/images/icons/iconLogo.svg";
 import ButtonLanguage from "../components/home/ButtonLanguage.jsx";
 import {
@@ -10,8 +10,15 @@ import {
     bannerForm8, bannerForm9
 }
     from "../assets/images/form/index.js";
+import {iconEyeClose, iconEyeOpen} from "../assets/images/icons/index.js";
 
 function Login () {
+    const [showPassword, setShowPassword] = useState(false)
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const  data = new FormData(e.target)
+        console.log(Object.fromEntries(data.entries()))
+    }
     return (
         <div className="login">
             <header className="w-[95%] my-[30px] mx-[2.5%] flex justify-between items-center">
@@ -56,7 +63,10 @@ function Login () {
                         </div>
                     </div>
                     <div className="w-[100%] h-[100%] absolute z-[5] flex justify-center items-center left-0 top-0">
-                        <form className="w-[300px] h-[300px] absolute">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="w-[300px] h-[300px] absolute"
+                        >
                             <p className="text-[25px] leading-0 font-bold text-main-white">
                                 Sign in
                             </p>
@@ -68,12 +78,15 @@ function Login () {
                                  mt-[30px] outline-none text-main-white placeholder:text-[13px]"
                             />
                             <input
-                                type="password"
+                                type={showPassword ? "text" : "password"}
                                 placeholder="Password"
                                 name="password"
                                 className="w-[300px] h-[50px] p-[10px] rounded-[7px] border-none bg-[#161A27]
                                  mt-[30px] outline-none text-main-white placeholder:text-[13px]"
                             />
+                            <button className="absolute top-[160px] right-[-40px]" onClick={() => setShowPassword(!showPassword)}>
+                                <img className="w-[30px]" src={showPassword ? iconEyeOpen : iconEyeClose} alt="eyes"/>
+                            </button>
                             <button
                                 className="w-[300px] h-[50px] rounded-[7px] border-none bg-vibrant-pink
                                  mt-[30px] text-main-white text-[20px] cursor-pointer"

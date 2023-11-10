@@ -1,16 +1,18 @@
-import React from 'react';
-import Nav from "../components/Nav.jsx";
-import WrapperContent from "../sections/home/WrapperContent.jsx";
-import Footer from "../components/Footer.jsx";
-
-import Reveal from "../components/home/Reveal.jsx";
+import React, {useEffect, useState} from 'react';
+import LoadingPage from "../components/LoadingPage.jsx";
+import WrapperHome from "../sections/home/WrapperHome.jsx";
 
 const Home = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 3000);
+    }, []);
     return (
         <main className="relative">
-            <Nav/>
-            <WrapperContent/>
-            <Footer/>
+            {isLoading ? <LoadingPage /> : <WrapperHome/>}
         </main>
     );
 };

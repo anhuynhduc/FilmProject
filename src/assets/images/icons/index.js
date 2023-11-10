@@ -18,8 +18,8 @@ import iconLogout from './iconLogout.png'
 import iconHelp from './iconHelp.png'
 import iconComment from './iconComment.png'
 import iconList from './iconList.png'
-
-
+import iconEyeClose from './iconEyeClose.png'
+import iconEyeOpen from './iconEyeShow.png'
 
 export {
    iconMyMovies,
@@ -40,5 +40,7 @@ export {
     iconLogout,
     iconSetting,
     iconUserProfile,
-    iconList
+    iconList,
+    iconEyeClose,
+    iconEyeOpen
 }

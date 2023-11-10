@@ -8,26 +8,20 @@ import PaymentForm from "./pages/PaymentForm.jsx";
 import PaymentCode from "./pages/PaymentCode.jsx";
 import PaymentSuccess from "./pages/PaymentSuccess.jsx";
 import Preview from "./pages/Preview.jsx";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 3000);
-    }, []);
   return (
-      <div className="relative">
-          {/*{isLoading ? <LoadingPage /> : <Home/>}*/}
-          {/*<RegisterForm/>*/}
-          {/*<RegisterCode/>*/}
-          {/*<Login/>*/}
-          {/*<PaymentForm/>*/}
-          {/*<PaymentCode/>*/}
-          {/*<PaymentSuccess/>*/}
-          <Preview/>
-      </div>
+        <Routes>
+            <Route path='/' element={<Preview/>}/>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<RegisterForm/>}/>
+            <Route path='/registerCode' element={<RegisterCode/>}/>
+            <Route path='/payment' element={<PaymentForm/>}/>
+            <Route path='/paymentCode' element={<PaymentCode/>}/>
+            <Route path='/paymentSuccess' element={<PaymentSuccess/>}/>
+        </Routes>
   )
 }
 
